@@ -19,10 +19,6 @@ end
 Компилиране и зареждане на файл
 
 ```bash
-% iex
-Erlang/OTP 19 [erts-8.2] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
-
-Interactive Elixir (1.4.1) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> c "times.exs"
 [Times]
 iex(2)> Times.double(10)
