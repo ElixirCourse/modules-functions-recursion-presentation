@@ -4,7 +4,7 @@
 
 #HSLIDE
 
-Дефиниране на модул
+# Дефиниране на модул
 
 ```elixir
 defmodule Times do
@@ -16,7 +16,7 @@ end
 
 #HSLIDE
 
-Компилиране и зареждане на файл
+# Компилиране и зареждане на файл
 
 ```bash
 iex(1)> c "times.exs"
@@ -27,7 +27,7 @@ iex(2)> Times.double(10)
 
 #HSLIDE
 
-Функции с различен брой параметри
+# Функции с различен брой параметри
 
 ```bash
 iex(1)> String.split("Elixir is awesome. It totally kicks bum.")
@@ -39,7 +39,7 @@ iex(2)> String.split("Elixir is awesome. It totally kicks bum.", ".", parts: 2)
 
 #HSLIDE
 
-do..end блокове с код
+# do..end блокове с код
 
 ```elixir
 def double(n), do: n * 2
@@ -47,7 +47,7 @@ def double(n), do: n * 2
 
 #HSLIDE
 
-Дефиниране на функции и pattern matching
+# Дефиниране на функции и pattern matching
 
 ```elixir
 defmodule Factorial do
@@ -58,7 +58,7 @@ end
 
 #HSLIDE
 
-Реда на дефиниране на функциите има значение
+# Реда на дефиниране на функциите има значение
 
 ```elixir
 defmodule Factorial do
@@ -69,7 +69,7 @@ end
 
 #HSLIDE
 
-Guard клаузи при дефиниране на функции
+# Guard клаузи при дефиниране на функции
 
 ```elixir
 defmodule Fibonachi do
@@ -81,7 +81,7 @@ end
 
 #HSLIDE
 
-Параметри със стойности по подразбиране
+# Параметри със стойности по подразбиране
 
 ```elixir
 defmodule Example do
