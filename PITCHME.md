@@ -32,6 +32,7 @@ iex(2)> Times.double(10)
 ```bash
 iex(1)> String.split("Elixir is awesome. It totally kicks bum.")
 ["Elixir", "is", "awesome.", "It", "totally", "kicks", "bum."]
+
 iex(2)> String.split("Elixir is awesome. It totally kicks bum.", ".", parts: 2)
 ["Elixir is awesome", " It totally kicks bum."]
 ```
@@ -74,7 +75,7 @@ Guard клаузи при дефиниране на функции
 defmodule Fibonachi do
   def of(1), do: 1
   def of(2), do: 1
-  def of(n) when is_number(n) and n > 0, do: of(n - 1) + of(n - 2)
+  def of(n) when is_number(n), do: of(n - 1) + of(n - 2)
 end
 ```
 
@@ -105,7 +106,13 @@ Private функции
 Pipe оператора - `|>`
 
 ```elixir
-iex(30)> Enum.join(String.split(String.upcase("name,sex,location"), ","), " ")
+iex(30)> Enum.join(
+  String.split(
+    String.upcase(
+      "name,sex,location"),
+    ","),
+  " "
+)
 "NAME SEX LOCATION"
 ```
 
@@ -114,7 +121,10 @@ iex(30)> Enum.join(String.split(String.upcase("name,sex,location"), ","), " ")
 Pipe оператора - `|>`
 
 ```elixir
-iex(33)> "name,sex,location" |> String.upcase |> String.split(",") |> Enum.join(" ")
+iex(33)> "name,sex,location"
+  |> String.upcase
+  |> String.split(",")
+  |> Enum.join(" ")
 "NAME SEX LOCATION"
 ```
 
