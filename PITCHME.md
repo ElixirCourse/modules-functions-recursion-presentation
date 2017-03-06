@@ -27,7 +27,7 @@ iex(2)> Times.double(10)
 
 #HSLIDE
 
-# Функции с различен брой параметри
+### Функции с различен брой параметри
 
 ```bash
 iex(1)> String.split("Elixir is awesome. It totally kicks bum.")
@@ -39,7 +39,7 @@ iex(2)> String.split("Elixir is awesome. It totally kicks bum.", ".", parts: 2)
 
 #HSLIDE
 
-# do..end блокове с код
+### do..end блокове с код
 
 ```elixir
 def double(n), do: n * 2
@@ -47,7 +47,7 @@ def double(n), do: n * 2
 
 #HSLIDE
 
-# Дефиниране на функции и pattern matching
+### Дефиниране на функции и pattern matching
 
 ```elixir
 defmodule Factorial do
@@ -58,7 +58,7 @@ end
 
 #HSLIDE
 
-# Реда на дефиниране на функциите има значение
+### Реда на дефиниране на функциите има значение
 
 ```elixir
 defmodule Factorial do
@@ -69,7 +69,7 @@ end
 
 #HSLIDE
 
-# Guard клаузи при дефиниране на функции
+### Guard клаузи при дефиниране на функции
 
 ```elixir
 defmodule Fibonachi do
@@ -81,7 +81,7 @@ end
 
 #HSLIDE
 
-# Параметри със стойности по подразбиране
+### Параметри със стойности по подразбиране
 
 ```elixir
 defmodule Example do
@@ -97,7 +97,7 @@ Example.func("a", "b", "c", "d") # => ["a", "b", "c", "d"]
 
 #HSLIDE
 
-Private функции
+### Private функции
 
 Да решим FizzBuzz проблема стъпка по стъпка
 
@@ -118,7 +118,7 @@ iex(30)> Enum.join(
 
 #HSLIDE
 
-Pipe оператора - `|>`
+### Pipe оператора - `|>`
 
 ```elixir
 iex(33)> "name,sex,location"
@@ -130,7 +130,7 @@ iex(33)> "name,sex,location"
 
 #HSLIDE
 
-Връзки между модули и влагане
+### Връзки между модули и влагане
 
 ```elixir
 defmodule Outer do
@@ -151,7 +151,7 @@ Outer.Inner.inner_func # => "hello world"
 
 #HSLIDE
 
-import
+### import
 
 ```elixir
 defmodule CsvUtils do
@@ -169,7 +169,7 @@ end
 
 #HSLIDE
 
-alias
+### alias
 
 ```elixir
 defmodule Outer.Inner do
@@ -189,11 +189,11 @@ end
 
 #HSLIDE
 
-require
+### require
 
 #HSLIDE
 
-Модулни атрибути
+### Модулни атрибути
 
 ```elixir
 defmodule Greeter do
@@ -211,7 +211,7 @@ end
 
 #HSLIDE
 
-Използване на Erlang модули
+### Използване на Erlang модули
 
 ```elixir
 :rand.uniform(100) # => 98
@@ -220,8 +220,8 @@ end
 
 #HSLIDE
 
-Да попишем малко код :-)
+### Да попишем малко код :-)
 
 #HSLIDE
 
-Въпроси?
+### Въпроси?
