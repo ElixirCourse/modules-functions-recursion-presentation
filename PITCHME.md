@@ -33,7 +33,10 @@ iex(2)> Times.double(10)
 iex(1)> String.split("Elixir is awesome. It totally kicks bum.")
 ["Elixir", "is", "awesome.", "It", "totally", "kicks", "bum."]
 
-iex(2)> String.split("Elixir is awesome. It totally kicks bum.", ".", parts: 2)
+iex(2)> String.split(
+  "Elixir is awesome. It totally kicks bum.",
+  ".",
+  parts: 2)
 ["Elixir is awesome", " It totally kicks bum."]
 ```
 
